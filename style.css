@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+
+/*********** Navbar Section Start *********/
+
+.navbar-inverse {
+    background-image: linear-gradient( to right top, rgb(25, 28, 209), rgb(253, 230, 152));
+} 
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-size: 31px;
+}
+
+.navbar-inverse ul li:hover {
+    background: rgba(82, 128, 253, 0.918);
+    color: white;
+}
+
+
+/************ Navbar Section End ********/
+
+
+/************ Header Section Start *****/
+
+.header {
+    height: 87vh;
+    background-image: linear-gradient( to left bottom, rgba(155, 214, 216, 0.562), rgb(77, 42, 231)),  url("orig.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 46px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    animation-name: moveInLeft;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    animation: moveInRight 2.5s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    80% {
+        transform: translateX(11px);
+    }
+    100% {
+        opacity: 2;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    80% {
+        transform: translateX(-11px);
+    }
+    100% {
+        opacity: 2;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/************ Header Section End **********/
+
+
+/*********** About Me Section Start ********/
+
+
+#about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #5a5a5a;
+    background-image: linear-gradient( to left bottom, rgba(155, 214, 216, 0.562), rgb(77, 42, 231)), url("orig.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+#skills {
+    padding-top: 8px;
+    padding-bottom: 100px;
+    color: #5a5a5a;
+    background-image: linear-gradient( to left bottom, rgba(155, 214, 216, 0.562), rgb(77, 42, 231)), url("orig.jpg");
+    background-size: cover;
+    background-position: cover;
+    color: #fff;
+}
+
+  .pic  {
+      margin-top: 15px;
+      
+  }
+  
+  .text {
+      margin-top: 52px;
+      font-size: 20px;
+      height: 55vh;
+  }
+ 
+ .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+     
+    
+} 
+
+.one {
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out; 
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 2;
+        transform: translate(0);
+    }
+}
+
+.two {
+    animation-name: moveInLeft;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out; 
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 2;
+        transform: translate(0);
+    }
+}
+
+.three {
+        animation-name: moveInLeft;
+        animation-duration: 3.5s;
+        animation-timing-function: ease-out; 
+    }
+
+    @keyframes moveInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-250px);
+        }
+        80% {
+            transform: translateX(5px);
+        }
+        100% {
+            opacity: 2;
+            transform: translate(0);
+        }
+    }
+
+
+    .four  {
+        animation-name: moveInLeft;
+        animation-duration: 4.5s;
+        animation-timing-function: ease-out; 
+    }
+
+    @keyframes moveInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-250px);
+        }
+        80% {
+            transform: translateX(5px);
+        }
+        100% {
+            opacity: 2;
+            transform: translate(0);
+        }
+    }
+
+.about    {
+margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+    .featurette-heading {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+.img-responsive {
+    border-radius: 100px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*********** About Me Section End **********/
+
+
+/******** My Portfolio Section Start *******/
+
+#portfolio {
+    background-image: linear-gradient( to left bottom, rgba(155, 214, 216, 0.562), rgb(77, 42, 231)), url("orig.jpg");
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    position: relative;
+     
+}
+
+.project {
+    transition: transform .3s;
+    
+}
+
+.project:hover {
+    transform: scale(1.1);
+    
+}
+
+
+/********* My Portfolio Section End ********/
+
+
+/********* Footer Section Start ************/
+
+footer #footer-above {
+    background-image: linear-gradient( to left bottom, rgba(155, 214, 216, 0.562), rgb(77, 42, 231)), url("orig.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+
+#footer-above {
+    padding-top: 50px;
+    width: 80%;
+}
+
+#footer-above div {
+    margin-bottom: 50px;
+    width: 250px;
+    text-align: center;
+}
+
+#footer-above ul {
+    padding: 0;
+}
+
+#footer-above li {
+    display: inline;
+}
+
+#footer-below {
+    color: #fff;
+    font-size: 1.0em;
+    padding: 25px 0;
+    background-color: #000;
+    background-position: center;
+    text-align: center;
+}
+
+.button {
+    color: #fff;
+    border: solid 2px #000;
+    border-radius: 70%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 48px;
+    -webkit-transitional: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.button:hover {
+    border: solid 2px rgb(21, 102, 214);
+    color: #2998E4;
+}
+
+.col-sm-6,
+.col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-12 {
+    float: left;
+    width: 100%;
+}
+
+@media (min-width: 100px) {
+    .col-sm-6 {
+        float: left;
+    }
+}
+
+
+/******* Footer Section End ***********/
